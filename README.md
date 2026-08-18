@@ -1,20 +1,26 @@
 # IMM-2026-001 — eTMF Simulation Project
 
-A fictional, portfolio-focused Electronic Trial Master File (eTMF) project designed to demonstrate clinical trial document management, metadata governance, controlled filing, document lifecycle, QC, approval, effectiveness, and auditability.
+A fictional, portfolio-focused Electronic Trial Master File (eTMF) project designed to demonstrate clinical trial document management, metadata governance, controlled filing, document lifecycle, quality control, approval, effectiveness, and inspection readiness.
 
 > **Important:** IMM-2026-001 is entirely fictional. This repository does not contain records from a real clinical trial and is not connected to a production Veeva Vault environment.
 
+---
+
 ## Project Overview
 
-- **Study ID:** IMM-2026-001
-- **Sponsor:** Fictional Pharma Ltd.
-- **Therapeutic Area:** Immunology / Allergy
-- **Indication:** Moderate-to-Severe Atopic Dermatitis
-- **Investigational Product:** IMM-101
-- **Phase:** II
-- **Design:** Randomized, Double-Blind, Placebo-Controlled
+| Attribute | Value |
+|---|---|
+| Study ID | IMM-2026-001 |
+| Sponsor | Fictional Pharma Ltd. |
+| Therapeutic Area | Immunology / Allergy |
+| Indication | Moderate-to-Severe Atopic Dermatitis |
+| Investigational Product | IMM-101 |
+| Phase | II |
+| Design | Randomized, Double-Blind, Placebo-Controlled |
 
-## TMF Structure
+---
+
+## eTMF Structure
 
 The project follows an 11-zone eTMF structure:
 
@@ -30,57 +36,45 @@ The project follows an 11-zone eTMF structure:
 10. Data Management
 11. Statistics
 
-The current directory contains **96 document files**.
+A dedicated `00_eTMF_Master_Register` area provides centralized document tracking and metadata control.
+
+The `Configuration` area contains documents describing the simulated data model and document lifecycle.
+
+---
+
+## Repository Contents
+
+The current repository contains:
+
+- 96 controlled clinical-trial document files
+- 1 eTMF Master Register
+- 2 eTMF configuration specifications
+- 3 portfolio documentation files
+- README and repository configuration
+
+The controlled documents are organized according to their functional TMF zone and artifact classification.
+
+---
 
 ## Document Lifecycle
 
-Created → Metadata Review → QC Passed → Approved → Effective → Filed → Audit Trail
+The simulated document lifecycle is:
 
-## QC and Traceability
-
-| Control | Result |
-|---|---:|
-| Registered documents | 96 |
-| Metadata QC | PASS |
-| QC Passed | 96/96 |
-| Approved | 96/96 |
-| Effective | 96/96 |
-| Filed | 96/96 |
-| Lifecycle events | 480 |
-| Audit events | 480 |
-| Filing Log records | 96 |
-| Final eTMF QC | PASS |
-
-## Veeva Vault-style Concepts Demonstrated
-
-- Artifact classification
-- Document metadata
-- Controlled document versions
-- Lifecycle states
-- Quality control
-- Approval workflow
-- Effective dates
-- Controlled filing
-- Audit history
-- Inspection readiness
-- Traceability
-
-This is **Veeva Vault-style**, not a claim of an actual production Vault configuration.
-
-## Portfolio Objective
-
-This project demonstrates practical understanding of:
-
-- Clinical Research Operations
-- TMF / eTMF concepts
-- Document Management
-- Quality Control
-- Metadata Governance
-- Clinical Trial Lifecycle
-- Auditability
-- Structured data management
-- Digital clinical-trial workflows
-
-## Disclaimer
-
-All study names, organizations, investigators, sites, dates, documents, and clinical information in this repository are fictional and created solely for educational and portfolio purposes.
+```text
+Created
+   ↓
+Metadata Review
+   ↓
+QC Review
+   ↓
+QC Passed
+   ↓
+Approval
+   ↓
+Approved
+   ↓
+Effective
+   ↓
+Filed
+   ↓
+Inspection Ready
